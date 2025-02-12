@@ -1,0 +1,10 @@
+h1{
+    color: tomato;
+    font-family: 'Courier New', Courier, monospace;
+}
+img{
+    object-fit: cover;
+    border: black;
+    border-radius: 50%;
+    
+}
