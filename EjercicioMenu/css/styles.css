@@ -1,0 +1,66 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    background: url("https://images.unsplash.com/photo-1495195129352-aeb325a55b65?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9uZG8lMjBkZSUyMG1hZGVyYXxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: fit-content;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    height: 4000vh;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.imagenes, .bebidas, .Hamburguesas, .botanas, .especialidad, .pizzas, .contacto {
+    width: 48%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 10vh;
+}
+.titulo {
+    display: block; 
+    text-align: center;
+    width: 20%; 
+    margin: 0 auto;
+    padding: 10px;
+    
+}
+.titulo p {
+    color: brown;
+}
+
+p{
+    font-size: 150%;
+}
+
+.titulo hr {
+    margin: 1px;
+}
+
+.imagenes img {
+    width: 90%;
+    min-width: 350px;
+    height: auto;
+    border-radius: 80%;
+}
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+    div{
+        display: inline-block;
+    }
+}
+
+
