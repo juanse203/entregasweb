@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#contenedor{
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+      "header"
+      "nav"
+      "news"
+      "text"
+      "aside"
+      "footer"  
+    ;
+
+    header{
+        grid-area: header;
+        background-color: rgb(95, 160, 118);
+    }
+
+    nav{
+        grid-area: nav;
+        background-color: turquoise;
+    }
+
+    #news{
+        grid-area: news;
+        background-color: rgb(183, 101, 216);
+    }
+
+    #text{
+        grid-area: text;
+        background-color: rgb(216, 101, 101);
+    }
+
+    aside{
+        grid-area: aside;
+        background-color: rgb(9, 90, 13);
+    }
+
+    footer{
+        grid-area: footer;
+        background-color: rgb(228, 59, 231);
+    }
+
+
+}
+
+/* Tablet */
+@media (min-width: 481px){
+    #contenedor{
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+          "header header header nav"
+          "news news news news"
+          "text text text text"
+          "footer footer aside aside"  
+        ;
+    }
+}
+
+/* Computadores */
+@media (min-width: 768px){
+    #contenedor{
+
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+          "nav nav header header header header"
+          "nav nav news news news aside"
+          "nav nav text text text aside"
+          "nav nav footer footer footer footer"  
+        ;
+    }
+}
