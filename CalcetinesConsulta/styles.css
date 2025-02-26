@@ -16,13 +16,35 @@
     "footer"
     ;
 }
+select{
+    display: block;
+    border-radius: 12px;
+    color: white;
+    padding: 4px;
+    line-height: 24px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+    padding-right: 24px;
+    outline: none;
+}
+select:hover{
+    color: black;
+}
 
 hr{
     width: 25%;
     height: 8px;
     background-color: black;
 }
+select{
+    width: 15%;
+    background-color: rgb(162, 74, 74);
 
+}
 
 .menu{
     display: flex;
@@ -49,7 +71,6 @@ hr{
     text-decoration: none;
     color: black;
     font-size: 16px;
-    transition: 0.3s;
 }
 
 .menu-links a:hover{
@@ -100,9 +121,9 @@ hr{
 }
 
 .service {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
+    display:grid;
     align-items: center;
+    grid-template-columns: 1fr 1fr; 
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 5px;
@@ -131,8 +152,9 @@ hr{
     display: none;
     margin-left: auto;
 }
+
 /* Celulares */
-@media (max-width: 480px) {
+@media (max-width: 478px) {
     .internal-links {
         grid-template-columns: 1fr;
     }
@@ -196,6 +218,16 @@ hr{
           "links links links links"
           "services"
           "footer footer footer footer";
+    }
+    .services{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .service{
+        display: flex;
     }
     .internal-links {
         grid-template-columns: repeat(4, 1fr);
